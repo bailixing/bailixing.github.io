@@ -98,9 +98,6 @@
   
   
   
-  <link rel="prefetch" href="//unpkg.com/valine/dist/Valine.min.js" as="script">
-  
-  
   
   
 <link rel="stylesheet" href="/css/main.css">
@@ -243,11 +240,6 @@
       <i class="iconfont icon-right nav-next-icon"></i>
     </a>
   </div>
-  
-</div>
-
-<div class="card card-content comment-card" style="margin-top: 16px;">
-  <div class="comment-card-title">评论</div>
   
 </div>
 
@@ -415,6 +407,19 @@
     
     
     
+      <div class="footer-dsc">
+        
+        本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        
+        
+        <span>&nbsp;|&nbsp;</span>
+        
+        
+        本站总访客数<span id="busuanzi_value_site_uv"></span>次
+        
+      </div>
+      
+    
 </footer>
   <a role="button" id="scrollbutton" class="basebutton" >
   <i class="iconfont icon-arrowleft button-icon"></i>
@@ -456,6 +461,8 @@
   
 <script src="/js/main.js"></script>
 
+  
+  <script>loadScript("/js/lib/busuanzi.min.js")</script>
   
   
   <script>
