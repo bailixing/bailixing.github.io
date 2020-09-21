@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<meta  lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#fff" id="theme-color">
+  <link rel="icon" href="">
+  <title>XXXXL信亮Garage</title>
+  
+  
+  <meta property="og:title" content="不负by笑笑">
+  
+  
+  <meta property="og:url" content="http://example.com/2020/09/21/%E3%80%90%E4%BF%A1%E4%BA%AE%E3%80%91%E4%B8%8D%E8%B4%9F/index.html">
+  
+  
+  <meta property="og:img" content="http://img4.a0bi.com/upload/ttq/20170810/1502334433079.jpg?imageView2/0/w/600/h/600">
+  
+  
+  <meta property="og:img" content="donno how to add">
+  
+  
+  <meta property="og:type" content="article">
+  <meta property="og:article:published_time" content="2020-09-21">
+  <meta property="og:article:modified_time" content="2020-09-21">
+  <meta property="og:article:author" content="碗">
+  
+  
+  
+  
+  
+  <script>
+    // control reverse button
+    var reverseDarkList = {
+      dark: 'light',
+      light: 'dark'
+    };
+    var themeColor = {
+      dark: '#1c1c1e',
+      light: '#fff'
+    }
+    // get the data of css prefers-color-scheme
+    var getCssMediaQuery = function() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // reverse current darkmode setting function
+    var reverseDarkModeSetting = function() {
+      var setting = localStorage.getItem('user-color-scheme');
+      if(reverseDarkList[setting]) {
+        setting = reverseDarkList[setting];
+      } else if(setting === null) {
+        setting = reverseDarkList[getCssMediaQuery()];
+      } else {
+        return;
+      }
+      localStorage.setItem('user-color-scheme', setting);
+      return setting;
+    };
+    // apply current darkmode setting
+    var setDarkmode = function(mode) {
+      var setting = mode || localStorage.getItem('user-color-scheme');
+      if(setting === getCssMediaQuery()) {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[setting];
+      } else if(reverseDarkList[setting]) {
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
+        document.getElementById('theme-color').content = themeColor[setting];
+      } else {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
+      }
+    };
+    setDarkmode();
+  </script>
+  <script>
+    function loadScript(url, cb) {
+      var script = document.createElement('script');
+      script.src = url;
+      if (cb) script.onload = cb;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  </script>
+  
+  <link rel="preload" href="//at.alicdn.com/t/font_1946621_f7g5jnuftcf.css" as="style" >
+  <link rel="preload" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css" as="style" >
+  
+  <link rel="preload" href="//cdn.jsdelivr.net/npm/fslightbox@3.1.0/index.min.js" as="script">
+  
+  
+  <link rel="preload" href="/js/lib/lozad.min.js" as="script">
+  
+  
+  
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1946621_f7g5jnuftcf.css">
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
+
+  
+  
+  
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <div class="wrapper">
+    
+    <nav class="navbar">
+  <div class="navbar-logo">
+    <span class="navbar-logo-main">
+      
+      <img class="navbar-logo-img" src="">
+      
+      <span class="navbar-logo-dsc">XXXXL信亮Garage</span>
+    </span>
+  </div>
+  <div class="navbar-menu">
+    
+    <a href="/" class="navbar-menu-item">
+    
+    首页
+    
+    </a>
+    
+    <a href="/archives" class="navbar-menu-item">
+    
+    归档
+    
+    </a>
+    
+    <a href="/tags" class="navbar-menu-item">
+    
+    标签
+    
+    </a>
+    
+    <a href="/categories" class="navbar-menu-item">
+    
+    分类
+    
+    </a>
+    
+    <a href="/about" class="navbar-menu-item">
+    
+    关于
+    
+    </a>
+    
+    <a href="/links" class="navbar-menu-item">
+    
+    友链
+    
+    </a>
+    
+    <a class="navbar-menu-item darknavbar" id="dark"><i class="iconfont icon-weather"></i></a>
+    <a class="navbar-menu-item searchnavbar" id="search"><i class="iconfont icon-search" style="font-size: 1.2rem; font-weight: 400;"></i></a>
+  </div>
+</nav>
+    
+    <div id="local-search" style="display: none;">
+      <input class="navbar-menu-item" id="search-input" placeholder="请输入搜索内容...">
+      <div id="search-content"></div>
+    </div>
+    
+    <div class="section-wrap">
+      <div class="container">
+        <div class="columns">
+          <main class="main-column">
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      不负by笑笑
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2020-09-21T13:04:36.904Z" style="display: flex; align-items: center;">
+      <i class="iconfont icon-calendar" style="margin-right: 2px;"></i>
+      <span>2020-09-21</span>
+    </time>
+    
+    
+    <span class="dot"></span>
+    <span>4.2k 字</span>
+    
+  </div>
+  
+  </header>
+  <div id="section" class="post-content">
+    <p>垂死梦中惊坐起，没人催更我还不知道我还有脑洞没写</p>
+<p>我觉得我的文越来越有种三流狗血小言的感觉了，三流言情之青春疼痛（？）</p>
+<p>我把握不好街霸的定位，所以写着写着就成了问题少年，最好的亮亮老师</p>
+<p>老师亮X问题少年信（伪街霸）</p>
+<p>熟悉利落的翻过围墙，落地的时候，毫不意外的声音响起：这是这个星期第几次了。在漆黑安静的夜晚，这样的声音竟不显得突兀…才怪，但是对于韩信来说，已经习惯了。但是韩信不予理会：要罚或者告到年级主任那里随你，我要回去休息了。</p>
+<p>黑暗中韩信看不清诸葛亮的表情，只知道传来的声音里带着戏谑：凌晨两点半，你准备去哪儿休息？</p>
+<p>韩信不愿和他多讲，不耐烦的啧了一声：操场、教室，总之不关你的事。</p>
+<p>这是这么多天以来，诸葛亮第一次抓住韩信的手，把他拉回自己的员工宿舍，韩信想抗拒，但奈何年纪小，力气不足，只能随着诸葛亮回到了他的教工宿舍。僵硬的躺在诸葛亮的身边，韩信不敢动，窄小的床动一下都能碰到旁边的人，更别说翻身。韩信好几次都想逃走，但是又舍不得离开柔软温暖得床，在心里天人交战，最终抵不过困意来袭，这是这几天他睡得最舒服的一次觉了。</p>
+<p>诸葛亮因为一些原因，一个星期前从大学教授调动到这所高中任教，刚好调到韩信所在的班级。韩信是学校出名的问题少年，白天上课睡觉，成绩吊车尾，但是没有什么严重到开除的违纪，因此学校也不好开除韩信。校长本来希望诸葛亮能带重点班，这么一位教授，校长当然不能放过。但是诸葛亮觉得分级制度并不好，他认为所有学生都应该一视同仁，所以选了成绩最差的班级，也就是韩信所在的班级。校长没有办法，只能按照诸葛亮意思办了。</p>
+<p>诸葛亮来到韩信所在的班级，发现班级的学生并没有他想想中的那么差，只是代课的老师没那么尽心，只是为了完成任务。而所谓的问题少年韩信，也是另有原因。</p>
+<p>韩信睁开眼，便是诸葛亮背对着他在换衣服，裸露在外的皮肤，在白炽灯的照射下显得无比白皙，甚至比班上女生的皮肤还好，穿着衬衣的诸葛亮，越发显得年轻，眉眼温柔，根本看不出岁月的痕迹。诸葛亮换好衣服，韩信好半天才反应过来他昨天晚上被诸葛亮拉到他的宿舍睡了一晚。</p>
+<p>诸葛亮看着韩信：怎么不多睡会儿，现在还早。</p>
+<p>韩信低下头，准备从床上起来：睡够了。</p>
+<p>诸葛亮：浴室里有新的洗漱用品，去洗漱吧。</p>
+<p>韩信察觉到有一丝不对劲，看着诸葛亮：老师什么意思？</p>
+<p>诸葛亮笑了笑：没什么意思，只是学校发多了的，一直备着的。走过去，摸了摸韩信有些刺手的短发：想什么呢，赶紧去洗漱吧。</p>
+<p>知道是自己误会，韩信有些不好意思，但又想不到说什么，只好去浴室洗漱。浴室里果然有没有拆开包装的洗漱用品。架子上摆着诸葛亮的洗漱用品，一如他的人那般简单。浴室与厨房一门之隔，韩信洗漱的时候听到诸葛亮在厨房弄什么，并没有去管。</p>
+<p>打开门，诸葛亮把手中的碗递给他：好了，现在还早，吃点吧。</p>
+<p>韩信有些楞楞的接过碗，诸葛亮：蛋羹，现在你们正在长身体，对身体有好处的。看到韩信还是没反应，诸葛亮：怎么了，虽然味道不怎么样，但是你也不用这么嫌弃吧。</p>
+<p>韩信摇摇头：没有，我没有嫌弃，老师挺好的。</p>
+<p>诸葛亮笑了出来：好了，我也要去洗漱了，你吃完了后就去操场走走吧，等会儿也要上早操了。</p>
+<p>韩信喝完，犹豫了一下还是走了。</p>
+<p>诸葛亮出来，看见空碗和压在碗下的纸条：老师，谢谢你。</p>
+<p>韩信来到操场，心情还是有些不能平静，但是转念想想自己又没有什么老师可图的，反正他是不可能放弃那份工作的，就觉得释然了。</p>
+<p>自从那天之后，韩信刻意避开了诸葛亮，故意再迟一点回去，或者干脆不回学校，直接在外面找个地方将就一晚，白天上课照样睡觉，只是每到诸葛亮的数学课时，韩信总是打起精神听课。</p>
+<p>一天，诸葛亮把韩信叫到办公室：下周家访，我希望到时候你能带我去你家。</p>
+<p>韩信有一瞬间僵硬：我家没人，老师别去了。</p>
+<p>诸葛亮皱眉：据我所知，你和你爷爷在一起生活。</p>
+<p>韩信败下阵来：好，下周星期几。</p>
+<p>诸葛亮：周天，上午十点。对了，我已经帮你申请，免去晚自习了。从明天开始，你不用上晚自习了。</p>
+<p>韩信突然就觉得心里闷着一口气：老师什么意思。</p>
+<p>诸葛亮敲了敲韩信的头：别以为不上晚自习就轻松了，你和老板说把上班时间调一下，每天晚上下班后到我的宿舍来，我给你补一个小时的课。</p>
+<p>韩信对着诸葛亮鞠了一躬：多谢老师，我很感谢老师这么做，但是我不需要老师可伶。</p>
+<p>诸葛亮挑眉：我什么时候可伶你呢，韩信，你可知道你若是再不好好学习，成绩再吊车尾，你让我一个教授的面子往哪儿放，你看看班里其他人的成绩，就只剩你了，你再这样下去，我的奖金就没了。</p>
+<p>韩信闷闷的：老师你差那一点奖金吗？</p>
+<p>诸葛亮：为什么会不差，高中老师的工资可比不上教授的工资。</p>
+<p>韩信：老师别装了，我知道你不差那一点钱，你只是在维护我那可伶的尊严罢了。</p>
+<p>诸葛亮：没有装不装，也不是为了维护你。韩信你要知道，你自己不会和钱过不去我更不会。不要说你有原因，谁都有自己的原因，你很有骨气，我很欣赏你，但是，你有想过你这样伤害自己的身体，心疼是谁吗？</p>
+<p>韩信：我知道了，我会按照老师的要求来的。</p>
+<p>天气渐凉，也确实不适合再在外面露宿了。初中时离家近，他还能赶到家，就算只睡几个小时，也是幸福的。但是现在离家远，爷爷年纪大了，经不起折腾了。</p>
+<p>周日如约而至，韩信难得没有去上班，而是把家里打扫干净乖乖在家等着诸葛亮的家访。</p>
+<p>诸葛亮如约而来，韩信的家，就如他想的那般简陋。但韩信的爷爷看起来还挺有精神，老人家热情的握着诸葛亮的手：老师，我们家小子在学校没有麻烦你吧，他要是在学校不听话，你就狠狠的教训他，不用管我。</p>
+<p>韩信有些不满：爷爷。</p>
+<p>诸葛亮笑着回握住老人的手：放心好了，韩信在学校很听话。</p>
+<p>老人很热情的留诸葛亮在这里吃饭，诸葛亮推辞，但老人坚持，诸葛亮便留了下来，还陪着老人下了两盘棋，哄得老人很开怀。</p>
+<p>韩信把诸葛亮送到路口：多谢老师，自从我爸和我妈吵架闹离婚开始，我爷爷已经很久没这么开心了。</p>
+<p>诸葛亮摸了摸韩信有些长短不齐的头发：其实你赚多少钱你爷爷并不在乎，他只希望你和其他孩子一样，不受你父母的影响，能在学校快快乐乐的长大。你爷爷开心也并不是因为我，你平时打工很少在家吧。</p>
+<p>韩信有些不好意思：是很少在家。</p>
+<p>诸葛亮叹气：你爷爷是因为你开心而开心的，没有那么缺钱的话，平时就多陪陪你爷爷。我走了，不用送了。</p>
+<p>韩信在诸葛亮身后沉默：若是可以，我也想轻松地活着。</p>
+<p>日子有条不紊的进行着，诸葛亮空闲的时候，还会带些食品衣服之类的去韩信家，陪老人下棋，聊聊韩信的学习什么的，韩信最开始拒绝过，但是总被诸葛亮找理由圆过去了，后来他便不再抗拒了，只把一切记在心里。经过一段时间的培训，韩信的成绩终于有了起色，不再是吊车尾了。</p>
+<p>这天，诸葛亮一如既往的等着韩信，可是一两个小时过去了，韩信还是没有来。诸葛亮有些焦急，和门卫打了声招呼就去了韩信打工的地方。</p>
+<p>可是到了韩信打工的地方，却发现韩信早就离开了，诸葛亮早就失了平时的冷静，疯了一样到处找韩信，他答应过韩信的爷爷，要好好照顾韩信，若是韩信出了事，他不敢想象老人要是知道了会怎样。</p>
+<p>精疲力尽的回到宿舍，韩信站在他宿舍门口，提着一盒饭菜，嘴角脸上带着伤：老师，对不起，饭菜冷了。</p>
+<p>诸葛亮冲了过去，韩信以为诸葛亮要打他时，诸葛亮只是用力的抱住了韩信：没事就好，回来就好。</p>
+<p>诸葛亮把韩信拉进屋里，翻出常备的酒精碘酒，用水洗干净了韩信脸上的尘土后给韩信摸上了酒精：有点疼，忍着点。</p>
+<p>韩信摇头：不疼。</p>
+<p>上完药：今天太晚了，去洗漱就在这儿睡吧。</p>
+<p>这是韩信第二次在这儿住下了，这一次，他的心境也不一样了，看着旁边人的睡颜，韩信想：有人关心的感觉还挺好。</p>
+<p>韩信与班上的同学玩得不好，针对他的人也不少，他仅有的好友也是在打工的地方认识的。今天晚上下班之后，他抱着刚热好的饭菜，想着诸葛亮帮他那么多，他没有什么回报的，只好把自己在餐馆做的红烧肉给诸葛亮。却不想碰到班上那群翻墙出来上网的人，把他拉到角落里，他本可以轻松地干倒那群人，可是为了护住怀里的饭盒，倒在地方被他们拳打脚踢。“呸，一个父母都嫌弃的贱种，拽什么拽。”“老师居然还护着你这种人，垃圾”。韩信不敢和诸葛亮说，那些人的话语就像一根刺一样，一直横梗在他和诸葛亮之间。</p>
+<p>诸葛亮感觉韩信最近变了，但具体哪儿变了他又说不出来，但是看着韩信终于好起来的成绩，诸葛亮感觉还是挺欣慰的。</p>
+<p>高三的钟声响起，从这一刻开始，他们以后的发展方向，全部都在这一年决定。</p>
+<p>已经辞去工作的韩信决定好好珍惜高三最后一年的时间，但是他还是时不时的给诸葛亮送去许多吃的，在一次同学的聊天中，韩信得知诸葛亮最喜欢草莓蛋糕。他曾经在蛋糕店外驻足，看着橱窗里精致的草莓蛋糕，但是价格却让他望而却步。</p>
+<p>韩信照常给诸葛亮送来了夜宵，推开门时，却发现诸葛亮趴在桌子上睡着了：诸葛老师，老师。诸葛亮或许睡得太沉了，没有反应。凑近看，长长的睫羽投下的阴影掩映着眼底厚重的黑眼圈，但是眉眼一如往昔那般温柔，令人不自觉的便深陷其中。韩信反应过来时，已经吻上了诸葛亮的脸颊，韩信赶紧离开，心里有些慌张，生怕诸葛亮醒来。但是等了半天，诸葛亮也没有醒来的迹象，韩信松了一口气。已经比诸葛亮高的他轻而易举的抱起了诸葛亮，诸葛亮比他想象中的轻。给诸葛亮盖好被子，韩信便回到宿舍，压下心里的躁动，这晚，韩信第一次梦遗了。早晨醒来时，韩信甚至有些不敢相信，梦中诸葛亮的脸，似乎还在眼前。</p>
+<p>或许是因梦的原因，韩信连着好几天都在避着诸葛亮，不敢正视诸葛亮，只要一看到诸葛亮，他便会忍不住想到那晚诸葛亮红唇微张、眼神涣散的在他身下呻吟。他无法和任何人说自己的想法，他更不敢让诸葛亮知道他的心思，他怕诸葛亮恶心他。</p>
+<p>恍惚的过了几天，根本无心关注外面的事物。骤闻噩耗，韩信赶到医院是爷爷已经不行了。爷爷：信啊，爷爷不能陪你了，你以后，一个人，也要，也要，好好地。</p>
+<p>诸葛亮赶到医院时，韩信跪在床边握着爷爷的手，不肯放开。诸葛亮走过去，脱下身上的大衣披在韩信的身上，拍了拍韩信的肩膀，为韩信带来了对于他来说又一个噩耗：我，要走了。</p>
+<p>熟悉的温暖唤回了韩信的意识，一如他曾露宿在操场和教室所感受到的温暖，韩信突然明白，那些好像存在于梦中的温暖不是假的。嗓子有些干涩，却发不出任何挽留的声音，他有什么理由要求诸葛亮留下来呢。</p>
+<p>陪着韩信下葬了爷爷，诸葛亮便要离开了，离开的那天，校长为他开了全校学生大会，班级的同学为他开了欢送会，但是韩信没有来。</p>
+<p>回到教工宿舍，收拾最后的东西，却发现桌子上摆着他最爱的草莓蛋糕：谢谢老师。</p>
+<p>诸葛亮一看便知道是谁送来的。韩信在诸葛亮离开后便退学也离开了，他要去过自己想要的生活。一人向南，一人向北，他们终究向两条平行线，错过了相遇的那一刻，便再无交集。</p>
+<p>韩信感觉挺尴尬的，不是一般的尴尬。也是，不论谁，撞见高中的班主任和男朋友分手都会觉得尴尬，尤其是他现在还坐在诸葛亮的对面。</p>
+<p>诸葛亮看着对面有些坐立难安的韩信，温柔的笑笑：你不用觉得尴尬，这不是很正常的事吗？</p>
+<p>韩信皱眉：老师，你，是因为他吗？</p>
+<p>诸葛亮：不完全是，我和他的感情早就出现了问题，只是一直拖到现在而已。好了，不说我了，五年了，你怎么样。</p>
+<p>韩信盯着茶杯出神：我挺好的，现在不用像以前那样拼命，不愁吃喝，还交到了很多朋友。（可是，我身边没有你。）</p>
+<p>诸葛亮笑道：那就好，当初我还担心了，现在看到你挺好的，我也放心。你的头发？</p>
+<p>韩信笑着：爷爷走后，再也没有人帮我剪头发了，索性就蓄了起来，前几天朋友染头发拉我一起，就陪他一起染了。</p>
+<p>诸葛亮并没有用异样的眼光看着他：挺有个性的。</p>
+<p>韩信主动伸出名片：这是我的联系方式。</p>
+<p>诸葛亮：好啊，留个联系方式，方便以后联系。</p>
+<p>出了店铺，一人向左，一人向右，一如多年前。</p>
+<p>身后突然拥上来的身体令诸葛亮有些震惊，韩信埋在诸葛亮衣服里：老师，在我还是学生时，我没有勇气让你留下来，抓不住你，现在，我和你站在同一个高度了，我，喜欢，你，你，可以，做我男朋友吗？</p>
+<p>诸葛亮笑了，入初见般的温柔：看你表现了。</p>
+<p>韩信大胆的握住诸葛亮的手，与他十指相扣。</p>
+
+  </div>
+  <div>
+  
+  <div class="post-note note-warning copyright" style="margin-top: 42px">
+    <p><span style="font-weight: bold;">作者：</span><a target="_blank" rel="nofollow noopener noreferrer" href="http://example.com/about">碗</a></p>
+    <p><span style="font-weight: bold;">文章链接：</span><a target="_blank" rel="nofollow noopener noreferrer" href="http://example.com/2020/09/21/%E3%80%90%E4%BF%A1%E4%BA%AE%E3%80%91%E4%B8%8D%E8%B4%9F/">http://example.com/2020/09/21/%E3%80%90%E4%BF%A1%E4%BA%AE%E3%80%91%E4%B8%8D%E8%B4%9F/</a></p>
+    <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
+  </div>
+  
+  </div>
+</article>
+<div class="nav">
+  
+  <div class="nav-item-prev">
+    <a href="/2020/09/21/【信亮】一物降一物/" class="nav-link">
+      <i class="iconfont icon-left nav-prev-icon"></i>
+      <div>
+        <div class="nav-label">上一篇</div>
+        
+        <div class="nav-title">一物降一物by笑笑 </div>
+        
+      </div>
+    </a>
+  </div>
+  
+  
+  <div class="nav-item-next">
+    <a href="/2020/09/21/【信亮】街斗/" class="nav-link">
+      <div>
+        <div class="nav-label">下一篇</div>
+        
+        <div class="nav-title">街斗 </div>
+        
+      </div>
+      <i class="iconfont icon-right nav-next-icon"></i>
+    </a>
+  </div>
+  
+</div>
+
+<div class="card card-content toc-card" id="mobiletoc">
+  <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+
+</div></main>
+          <aside class="left-column">
+            
+            <div class="card card-author">
+              
+<img src="http://img4.a0bi.com/upload/ttq/20170810/1502334433079.jpg?imageView2/0/w/600/h/600" class="author-img">
+
+<p class="author-name">碗</p>
+<p class="author-description">shit maker</p>
+<div class="author-message">
+  <a class="author-posts-count" href="/archives">
+    <span>10</span>
+    <span>文章</span>
+  </a>
+  <a class="author-categories-count" href="/categories">
+    <span>0</span>
+    <span>分类</span>
+  </a>
+  <a class="author-tags-count" href="/tags">
+    <span>0</span>
+    <span>标签</span>
+  </a>
+</div>
+
+            </div>
+            
+            <div class="sticky-tablet">
+  
+  
+  <article class="display-when-two-columns spacer">
+    <div class="card card-content toc-card">
+      <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+
+    </div>
+  </article>
+  
+  
+  <article class="card card-content categories-widget">
+    <div class="categories-card">
+  <div class="categories-header"><i class="iconfont icon-fenlei" style="padding-right: 2px;"></i>分类</div>
+  <div class="categories-list">
+    
+  </div>
+</div>
+  </article>
+  
+  <article class="card card-content tags-widget">
+    <div class="tags-card">
+  <div class="tags-header"><i class="iconfont icon-biaoqian" style="padding-right: 2px;"></i>热门标签</div>
+  <div class="tags-list">
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+          </aside>
+          <aside class="right-column">
+            <div class="sticky-widescreen">
+  
+  
+  <article class="card card-content toc-card">
+    <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+
+  </article>
+  
+  
+  <article class="card card-content">
+    <div class="recent-posts-card">
+  <div class="recent-posts-header"><i class="iconfont icon-wenzhang_huaban" style="padding-right: 2px;"></i>最近文章</div>
+  <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-21</div>
+        <a href="/2020/09/21/【信亮】无题/"><div class="recent-posts-item-content">某得名字by笑笑</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-21</div>
+        <a href="/2020/09/21/【信亮】今天信哥的智商不在线/"><div class="recent-posts-item-content">今天信哥的智商不在线by笑笑</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-21</div>
+        <a href="/2020/09/21/【信亮】平行世界/"><div class="recent-posts-item-content">平行世界by笑笑</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-21</div>
+        <a href="/2020/09/21/【信亮】一物降一物/"><div class="recent-posts-item-content">一物降一物by笑笑</div></a>
+      </div>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+  <div class="footer-container">
+    <div>
+      <div class="footer-dsc">
+        <span>Copyright ©
+          
+          2020 -
+          
+          2020
+        </span>
+        &nbsp;
+        <a href="/" class="footer-link">XXXXL信亮Garage </a>
+      </div>
+    </div>
+
+    
+    <div class="footer-dsc">
+      
+      Powered by
+      <a href="https://hexo.io/" class="footer-link" target="_blank" rel="nofollow noopener noreferrer">&nbsp;Hexo </a>
+      
+      
+      <span>&nbsp;|&nbsp;</span>
+      
+      
+      Theme -
+      <a href="https://github.com/theme-kaze" class="footer-link" target="_blank"
+        rel="nofollow noopener noreferrer">&nbsp;Kaze</a>
+      
+    </div>
+    
+    
+    
+    
+</footer>
+  <a role="button" id="scrollbutton" class="basebutton" >
+  <i class="iconfont icon-arrowleft button-icon"></i>
+</a>
+<a role="button" id="menubutton" class="basebutton">
+  <i class="iconfont icon-menu button-icon"></i>
+</a>
+<a role="button" id="popbutton" class="basebutton">
+  <i class="iconfont icon-expand button-icon"></i>
+</a>
+<a role="button" id="darkbutton" class="basebutton darkwidget">
+  <i class="iconfont icon-weather button-icon"></i>
+</a>
+<a role="button" id="searchbutton" class="basebutton searchwidget">
+  <i class="iconfont icon-search button-icon"></i>
+</a>
+
+  
+  
+  
+  <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img');
+    var i;
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a');
+      wrapper.setAttribute('data-fslightbox', 'gallery');
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'));
+      wrapper.style.cssText = 'width: 100%; display: flex; justify-content: center;';
+      img[i].before(wrapper);
+      wrapper.append(img[i]);
+    }
+    refreshFsLightbox();
+  }
+</script>
+<script>loadScript("//cdn.jsdelivr.net/npm/fslightbox@3.1.0/index.min.js", addImgLayout)</script>
+  
+  
+  
+<script src="/js/main.js"></script>
+
+  
+  
+  <script>
+    var addLazyload = function () {
+      var observer = lozad('.lozad', {
+        load: function (el) {
+          el.srcset = el.getAttribute('data-src');
+        },
+        loaded: function (el) {
+          el.classList.add('loaded');
+        }
+      });
+      observer.observe();
+    }
+  </script>
+  <script>loadScript("/js/lib/lozad.min.js", addLazyload)</script>
+  
+  
+</body>
+
+</html>
