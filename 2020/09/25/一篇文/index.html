@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<meta  lang="zh-CN" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#fff" id="theme-color">
+  <link rel="icon" href="https://www.ikea.com.hk/dairyfarm/hk/images/122/0712208_PE728639_S3.jpg">
+  <title>XXXXL信亮Garage</title>
+  
+  
+  <meta property="og:title" content="相渡">
+  
+  
+  <meta property="og:url" content="http://example.com/2020/09/25/%E4%B8%80%E7%AF%87%E6%96%87/index.html">
+  
+  
+  <meta property="og:img" content="http://img4.a0bi.com/upload/ttq/20170810/1502334433079.jpg?imageView2/0/w/600/h/600">
+  
+  
+  
+  <meta property="og:type" content="article">
+  <meta property="og:article:published_time" content="2020-09-25">
+  <meta property="og:article:modified_time" content="2020-09-25">
+  <meta property="og:article:author" content="丐帮公用碗">
+  
+  
+  <meta property="og:article:tag" content="信亮">
+  
+  <meta property="og:article:tag" content="白龙吟x武陵仙君">
+  
+  <meta property="og:article:tag" content="古风">
+  
+  
+  
+  
+  <script>
+    // control reverse button
+    var reverseDarkList = {
+      dark: 'light',
+      light: 'dark'
+    };
+    var themeColor = {
+      dark: '#1c1c1e',
+      light: '#fff'
+    }
+    // get the data of css prefers-color-scheme
+    var getCssMediaQuery = function() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // reverse current darkmode setting function
+    var reverseDarkModeSetting = function() {
+      var setting = localStorage.getItem('user-color-scheme');
+      if(reverseDarkList[setting]) {
+        setting = reverseDarkList[setting];
+      } else if(setting === null) {
+        setting = reverseDarkList[getCssMediaQuery()];
+      } else {
+        return;
+      }
+      localStorage.setItem('user-color-scheme', setting);
+      return setting;
+    };
+    // apply current darkmode setting
+    var setDarkmode = function(mode) {
+      var setting = mode || localStorage.getItem('user-color-scheme');
+      if(setting === getCssMediaQuery()) {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[setting];
+      } else if(reverseDarkList[setting]) {
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
+        document.getElementById('theme-color').content = themeColor[setting];
+      } else {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
+      }
+    };
+    setDarkmode();
+  </script>
+  <script>
+    function loadScript(url, cb) {
+      var script = document.createElement('script');
+      script.src = url;
+      if (cb) script.onload = cb;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  </script>
+  
+  <link rel="preload" href="//at.alicdn.com/t/font_1946621_f7g5jnuftcf.css" as="style" >
+  <link rel="preload" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css" as="style" >
+  
+  <link rel="preload" href="//cdn.jsdelivr.net/npm/fslightbox@3.1.0/index.min.js" as="script">
+  
+  
+  <link rel="preload" href="/js/lib/lozad.min.js" as="script">
+  
+  
+  
+  
+  
+  
+  <link rel="prefetch" href="//unpkg.com/valine/dist/Valine.min.js" as="script">
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1946621_f7g5jnuftcf.css">
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
+
+  
+  
+  
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <div class="wrapper">
+    
+    <nav class="navbar">
+  <div class="navbar-logo">
+    <span class="navbar-logo-main">
+      
+      <img class="navbar-logo-img" src="https://www.ikea.com.hk/dairyfarm/hk/images/122/0712208_PE728639_S3.jpg">
+      
+      <span class="navbar-logo-dsc">XXXXL信亮Garage</span>
+    </span>
+  </div>
+  <div class="navbar-menu">
+    
+    <a href="/" class="navbar-menu-item">
+    
+    首页
+    
+    </a>
+    
+    <a href="/archives" class="navbar-menu-item">
+    
+    归档
+    
+    </a>
+    
+    <a href="/tags" class="navbar-menu-item">
+    
+    标签
+    
+    </a>
+    
+    <a href="/categories" class="navbar-menu-item">
+    
+    分类
+    
+    </a>
+    
+    <a href="/about" class="navbar-menu-item">
+    
+    关于
+    
+    </a>
+    
+    <a href="/links" class="navbar-menu-item">
+    
+    友链
+    
+    </a>
+    
+    <a class="navbar-menu-item darknavbar" id="dark"><i class="iconfont icon-weather"></i></a>
+    <a class="navbar-menu-item searchnavbar" id="search"><i class="iconfont icon-search" style="font-size: 1.2rem; font-weight: 400;"></i></a>
+  </div>
+</nav>
+    
+    <div id="local-search" style="display: none;">
+      <input class="navbar-menu-item" id="search-input" placeholder="请输入搜索内容...">
+      <div id="search-content"></div>
+    </div>
+    
+    <div class="section-wrap">
+      <div class="container">
+        <div class="columns">
+          <main class="main-column">
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      相渡
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2020-09-25T10:09:35.881Z" style="display: flex; align-items: center;">
+      <i class="iconfont icon-calendar" style="margin-right: 2px;"></i>
+      <span>2020-09-25</span>
+    </time>
+    
+    <span class="dot"></span>
+    
+    <a href="/categories/羲卯的文/" class="post-meta-link">羲卯的文</a>
+    
+    
+    
+    <span class="dot"></span>
+    <span>4k 字</span>
+    
+  </div>
+  
+  <div class="post-meta post-show-meta" style="margin-top: -10px;">
+    <div style="display: flex; align-items: center;">
+      <i class="iconfont icon-biaoqian" style="margin-right: 2px; font-size: 1.15rem;"></i>
+      
+      
+        <a href="/tags/信亮/" class="post-meta-link">信亮</a>
+      
+      
+      <span class="dot"></span>
+      
+        <a href="/tags/白龙吟x武陵仙君/" class="post-meta-link">白龙吟x武陵仙君</a>
+      
+      
+      <span class="dot"></span>
+      
+        <a href="/tags/古风/" class="post-meta-link">古风</a>
+      
+    </div>
+  </div>
+  
+  </header>
+  <div id="section" class="post-content">
+    <p>阅前注意事项:</p>
+<p>1.桃花是双性花，雌雄同体，设定植入。</p>
+<p>2.龙有两根鸡鸡，龙性本淫，设定植入。</p>
+<p>3.可能会出现的雷沼：双性，口交，中出，野外，潮吹，生子（读作结果，非典型生子）。</p>
+<p>4.如果可接受，请往下翻阅。</p>
+<p>5.祝食用愉快。</p>
+<p>　　</p>
+<p>　　</p>
+<p>　　“哎，兄弟，武陵那棵桃花树，我这位列仙班以来，怎么没见它结过果啊？”</p>
+<p>　　“想什么呢，那棵桃花树已经修炼成妖，再后来成了仙，帮着处理人间的红线呢。这成了仙了，自然不是凡夫俗子能染指的。”</p>
+<p>　　“也是，成仙之前本来就妖气重，给桃花授粉的蜂蝶不敢靠近，成仙之后更是如此。”</p>
+<p>　　“这成了仙了，骨子里也还是妖，还有一些妖的本性呐——”</p>
+<p>　　“哦？兄弟你知道什么？”</p>
+<p>　　“这桃花虽成了仙，到底还是未能完全褪去妖身，还会被妖身影响。桃花么，要经历的，自然就是桃花劫。桃花劫一过，这妖身就能彻底除去，也就能正式成了咱天庭的姻缘仙了。”</p>
+<p>　　“这桃花劫——”</p>
+<p>　　“自然就是它未曾结果，只要这桃花结了果，过了桃花劫，妖身除去，重塑仙体，这才算得道成仙，断去凡念啦。”</p>
+<p>　　“那……”</p>
+<p>　　“只是这桃花性情孤寒，怕是没人能入得了他法眼，助他成仙咯。更何况这桃花功德圆满，也不是我等能染指的。”</p>
+<p>　　……</p>
+<p>　　</p>
+<p>　　诸葛亮入目是满眼的春色——此时桃花开得正好，绵延十里尽是桃花，风吹过，桃花林里像下了一场绯色的雨。</p>
+<p>　　</p>
+<p>　　桃花开，是桃花等待授粉的信号。</p>
+<p>　　</p>
+<p>　　妖身的影响已经被诸葛亮降到最低，但在花开时节身体上的变化却是他无法消除的。</p>
+<p>　　</p>
+<p>　　诸葛亮喘着气靠在树干上，眼中波光流转，摇碎满目春色，面上施了粉黛似的覆了一层薄红。衣衫半褪，将将盖住私处。</p>
+<p>　　</p>
+<p>　　这次开花给他带来的影响太大了，诸葛亮脑子里一片混乱，好不容易才从一团乱麻中找到一根清晰的线。</p>
+<p>　　</p>
+<p>　　起初妖身给他的影响几乎可以忽略不计，每过百年，开花时身体上的感受会越来越清晰——也越来越难以忍耐。</p>
+<p>　　</p>
+<p>　　诸葛亮刚撑过上一个百年，这第十八个百年竟如此难熬。他不确定自己能否撑得下这个百年，这才只是这个百年的开头，他要是还不结果，下一个百年他要承受如何大的煎熬，他不敢想象。</p>
+<p>　　</p>
+<p>　　身子已经敏感到风吹过他的肌肤都能引起战栗，花瓣落在他身上都能让他呼吸紊乱。双腿不停地抬起，放下，下身的异样让他亵裤都不能穿。</p>
+<p>　　</p>
+<p>　　诸葛亮快崩溃了——</p>
+<p>　　</p>
+<p>　　谁来，谁来帮他解脱……
+　　</p>
+<p>　　他双腿间，两口穴正往外吐露花蜜，已经在他身下层层叠叠的桃花瓣上积了一小滩。</p>
+<p>　　</p>
+<p>　　桃花是双性花，雌雄共体，这也是他至今未结果，除去妖身重塑仙体的秘密——他要结果，需要与人，或是其他的神妖仙媾和。</p>
+<p>　　</p>
+<p>　　花开时节他总是藏匿在桃林里忍耐，但这次情潮泰太过汹涌，他无法藏匿自己的气息了。</p>
+<p>　　</p>
+<p>　　——如果不是有“花开”这一妖身的特性，他大概会选择永远做一个仙与妖之间的存在吧。</p>
+<p>　　</p>
+<p>　　“嗯……”诸葛亮喉间泄出一丝呻吟。</p>
+<p>　　</p>
+<p>　　情潮越来越汹涌，双腿间的空虚让他感觉整个人都空落落的，情潮快要把他拍打在岸上，把他吞没……</p>
+<p>　　</p>
+<p>　　“老远就闻到这味道了……”</p>
+<p>　　</p>
+<p>　　诸葛亮猛地惊醒——此刻他双腿微张，完全袒露自己下身，那挺立的桃色阳具，两颗卵丸底下属于雌性的花穴，从花穴流出来的晶莹液体流经后面那处同样等待授粉的花朵，在他下身积成一滩水渍。</p>
+<p>　　</p>
+<p>　　在他面前是一身着银铠的男人，手持长枪，额上两只修长鹿角——是镇守东海的龙神，还是白龙。</p>
+<p>　　</p>
+<p>　　韩信走到诸葛亮面前，用长枪挑开他本就不能遮蔽身体的衣物，调动天地之气，枪尖的衣物碎成花瓣大小的破布。</p>
+<p>　　</p>
+<p>　　他俯下身，坐在诸葛亮双腿间，身上的银铠瞬间褪去，手中长枪也化作星点散开。</p>
+<p>　　</p>
+<p>　　龙性本淫，他在林子外很远的地方就闻见桃花发情的味道，自然而然地也就被血脉所影响，于是闻着味儿找到这里。</p>
+<p>　　</p>
+<p>　　诸葛亮没有任何反抗的力气，他在花开时是最虚弱的，身体也做好了接纳什么的准备。但是在韩信伸出一根手指插进雌穴的时候，诸葛亮还是猛地一震。</p>
+<p>　　</p>
+<p>　　那根手指毫无章法地在他穴里搅动，明明是被奸淫，却还是忍不住沉迷。身体的空虚得到一丝缓解，可欲火不甘扬汤止沸，身体伸处叫嚣着，这点细雨扑不灭这燎原之火。</p>
+<p>　　</p>
+<p>　　韩信缓慢地插进第二根手指，手指在穴中抽插，媚肉在他进去时紧紧地咬着他，在他想要抽离时作出最恳切的挽留——倒是淫荡的身子。</p>
+<p>　　</p>
+<p>　　此时诸葛亮身前挺立的阳具颤颤巍巍地也吐露出些汁水，韩信盯着那根，许是被雌穴影响，长得有些可爱。</p>
+<p>　　</p>
+<p>　　韩信笑了声，埋首诸葛亮腿间，将那根小玩意儿整根含入口中。</p>
+<p>　　</p>
+<p>　　“！”诸葛亮猛地睁大双眼，身前的欲望被潮湿柔软包裹，粗糙的舌苔舔过他的柱身，顶端抵着喉头，销魂的快感让他忍不住喘出声。</p>
+<p>　　</p>
+<p>　　雌穴被第三根手指填充，紧接着是第四根……他的雌穴被手指玩弄得水声阵阵，传进耳里是别样的羞耻。</p>
+<p>　　</p>
+<p>　　韩信只感觉诸葛亮腿间有种很甜的气味，品过才发觉原来是蜜，花蜜。</p>
+<p>　　</p>
+<p>　　吐出已经泄出疲软的阳具，舌将两颗卵丸舔入口中，含了一会儿又吐出来。卵丸底下是薄薄的两片花瓣，韩信抽出手指，舔进花瓣之间的甬道中。</p>
+<p>　　</p>
+<p>　　蜜，如水一般的蜜。</p>
+<p>　　</p>
+<p>　　诸葛亮想把韩信推开，白龙……怎么能纡尊降贵，给他做这种事……</p>
+<p>　　</p>
+<p>　　但是他手脚都软成一滩水，使不上力气，只有腰身余了一丝迎合的气力。</p>
+<p>　　</p>
+<p>　　韩信的唇齿紧贴着诸葛亮的花唇，舌头比手指更灵活，舔舔穴口，再骚刮他敏感的内壁。抽出来的手也没闲着，往诸葛亮身后那处穴探去。</p>
+<p>　　</p>
+<p>　　诸葛亮只能被掰开大腿，细细地喘着气，随着白龙的动作泄出几声呻吟。</p>
+<p>　　</p>
+<p>　　“仙君……你可知我找你多少年岁……”</p>
+<p>　　</p>
+<p>　　那年韩信未成龙形，还只是蛟。当蛟的日子挺苦的，动不动仙界的“正道人士”就把他当做作恶一方的凶兽过来打一打。</p>
+<p>　　</p>
+<p>　　蛟哪里懂人情世故，他只知道这一片水域很舒适，很适合他继续修炼。蛟化龙的时候，方圆百里内雷电交加，大雨倾盆。</p>
+<p>　　</p>
+<p>　　雨一下就是大半年，附近的村子都给淹了，作物也因为积水全部烂在地里，一年的收成全都打了泡影。</p>
+<p>　　</p>
+<p>　　后来桃夭捡到奄奄一息的他——他自损修为，宁愿不冲这一次化龙，也要尽可能保全自身。</p>
+<p>　　</p>
+<p>　　桃夭修炼成妖已有八百年岁，花草树修炼总是比人和兽禽难。桃夭帮他疗伤，让他缠在他的身上藏匿气息——桃花的气息能够掩盖他身为蛟的气息。</p>
+<p>　　</p>
+<p>　　又过两百年，韩信等来了第二次化龙的机会。桃夭带他去了一处秘境，曰:桃花源。</p>
+<p>　　</p>
+<p>　　等他成功化龙从桃花源里出来，却再也找不到桃夭了。</p>
+<p>　　</p>
+<p>　　于是他踏遍山河万里，直到又回到这一处，嗅见熟悉的桃花香气，他这才惊觉自己有多愚钝——桃夭功德圆满，受封成仙，在天宫住上三天，人间已去三年，他当然无处可寻。</p>
+<p>　　</p>
+<p>　　韩信把诸葛亮抱进怀里，下身勃发的那出抵着淫水涔涔的穴口，肌肤相亲带来的触感是这八百年来孤独的慰藉。</p>
+<p>　　</p>
+<p>　　“小……白龙？”诸葛亮神智清明了些，反应过来眼前的大抵是为妖时遇上的那条白蛟，他还笑着叫韩信小白龙。</p>
+<p>　　</p>
+<p>　　“仙君……”韩信紧紧地搂着诸葛亮。</p>
+<p>　　脖颈处有些湿润，滚烫的泪水顺着他的脖子滑到两人相贴的胸膛间。韩信舔上他的耳垂，在他的耳鬓厮磨：“你助我化龙，我助你成仙，可好？”</p>
+<p>　　</p>
+<p>　　“……好。”</p>
+<p>　　</p>
+<p>　　诸葛亮伸手搂住韩信的脖颈，主动分开双腿，盘在韩信腰间。他此时是喜悦的，如果是韩信帮他成仙的话，他是愿意的。</p>
+<p>　　</p>
+<p>　　诸葛亮调整了一下位置，缓缓往下坐。<br>前端顶开雌穴，韩信只感觉有一处薄膜在阻挡他，诸葛亮抬腰，再往下坐，顶端破开那层膜，高歌猛进。
+　　</p>
+<p>　　韩信给他做的扩张很到位，只是韩信龙根上有鳞片，他无法完全吃进去。</p>
+<p>　　</p>
+<p>　　“嗯……韩信……白龙？唔……”诸葛亮抬首，满脸春色的可爱模样便撞进韩信眼里，让他忍不住含住诸葛亮未出口的呻吟与喘息。</p>
+<p>　　</p>
+<p>　　雌穴咬的紧，谁都不会知道看起来清清冷冷的仙君那处竟如此炙热潮湿——只有他知道。韩信掐着诸葛亮的腰，放过他已经被舔吮得红肿的双唇，专心攻下城池。</p>
+<p>　　</p>
+<p>　　韩信的抽插可以说毫无规律，诸葛亮也未经情事，两人都只晓得随本性让自己获得快感。</p>
+<p>　　</p>
+<p>　　龙有两根，韩信怕他受不住，只插了一根在雌穴里，另一根贴着他的肛口，随着抽插的动作摩擦。诸葛亮如今全身都很敏感，另一根顶到肛口，顶端半埋进菊穴中，软肉收缩，紧紧地箍着他的前端。</p>
+<p>　　</p>
+<p>　　“嗯唔……哼……”</p>
+<p>　　</p>
+<p>　　韩信轻咬诸葛亮的锁骨，在他脖颈间留下星星点点的红痕，肩上还留了好几个牙印。</p>
+<p>　　</p>
+<p>　　“仙君……”</p>
+<p>　　</p>
+<p>　　韩信还是没忍住，换了个角度，抵在肛口的龙根也挺了进去。</p>
+<p>　　</p>
+<p>　　两根完全被柔软包裹，泡在桃花酿成的蜜里，身心都得到极大的满足。</p>
+<p>　　</p>
+<p>　　诸葛亮张张嘴，眼中的水光滑落下来，又爽快，又疼。
+　　</p>
+<p>　　韩信把诸葛亮按在桃花瓣里，抬起他的腿，压在诸葛亮脸侧。诸葛亮身段柔软，这样姿势他并不吃力，反倒是韩信的龙根怎样进出他的雌穴完全收入眼中。</p>
+<p>　　</p>
+<p>　　紫红色的巨大柱身盘踞着青筋，看起来狰狞可怖。随着韩信的抽插，穴肉被带出来一点，又被柱身带回去。柱身上沾满他身体里的水，还有一丝血红，韩信动作又快又猛，穴口水花四溅。</p>
+<p>　　</p>
+<p>　　诸葛亮偏过头不愿再看，韩信却温柔地吻着他的眼睑，说:“仙君……好好看着，我是怎么占有你的……”</p>
+<p>　　</p>
+<p>　　双穴受到的待遇却并不温柔，两根粗大的龙根在其中蛮横地冲撞，雌穴中的那根甚至顶开更深的地方，头部一次次的顶着内壁。</p>
+<p>　　</p>
+<p>　　韩信牵过诸葛亮的手，放在他平坦的小腹上。</p>
+<p>　　</p>
+<p>　　手底下鼓起一个弧度，很快又消失，再鼓起。诸葛亮拿为数不多的理性思考了一下，那是韩信的龙根。</p>
+<p>　　</p>
+<p>　　“啊！唔……”</p>
+<p>　　</p>
+<p>　　下身被完全填满，成妖一千八百年，从未被回应过的渴望得到满足。诸葛亮脑中一片混沌，硬挺的前端无人问津，却因为身上的快感又泄了身。</p>
+<p>　　</p>
+<p>　　脚趾因为快感蜷缩起来，腰也无意中迎合韩信的动作。桃花妖既纯又欲，对于情事无师自通，只是眼前这个人太过霸道，他一身本事毫无用武之地。</p>
+<p>　　</p>
+<p>　　——只能随着快感扭动腰肢。</p>
+<p>　　</p>
+<p>　　脑中已全被情欲占满，热烈的、渴望的、充盈的……</p>
+<p>　　</p>
+<p>　　身体深处酝酿着水意，像凝了一颗被一层气泡包裹的水球，韩信的每一次冲撞，都顶在气泡上。</p>
+<p>　　</p>
+<p>　　龙根摩擦过内壁带来阵阵快感成了水球破开的导火索。</p>
+<p>　　</p>
+<p>　　韩信抽身时只觉一股水流冲向他的顶端，出于好奇，他干脆完全抽出。那股水流从诸葛亮雌穴中喷射而出，韩信脸正对着，甚至喷在他脸上。</p>
+<p>　　</p>
+<p>　　他只看见诸葛亮弓起身子，微微抽搐，头往后仰，露出修长的脖子。韩信听见诸葛亮的呻吟音调拔高，还带了哭腔。</p>
+<p>　　</p>
+<p>　　眼看那股水流渐渐弱下来，韩信又把龙根插进去，快速顶弄几下之后又完全抽出。潮吹时的雌穴极其敏感，穴里没有东西时很快就能结束，但经韩信这一刺激，到达巅峰的快感被拉长，雌穴又一次射出水来，肛口附近也异常湿润。
+　　</p>
+<p>　　韩信又这样玩了几次，终于诸葛亮受不住哭着求饶，韩信这才抽出身等诸葛亮熬过高潮。</p>
+<p>　　</p>
+<p>　　双穴泛着水光，一片泥泞，无法完全合拢。
+　　</p>
+<p>　　韩信盯着好一会儿，随手捞起一朵桃花，花瓣朝外放在诸葛亮雌穴口。眼见他缓过气来，扶着尚未出精的龙根，将那朵桃花操进仙君雌穴里。</p>
+<p>　　</p>
+<p>　　柔嫩的桃花经受不住这样的刺激，嫣红的花汁顺着甬道流出来。</p>
+<p>　　</p>
+<p>　　“嗯哼……啊！哈……唔啊！”</p>
+<p>　　</p>
+<p>　　诸葛亮的喘息染上了哭腔，他也快承受不住这样的快感了，求饶夹杂在破碎的呻吟里。</p>
+<p>　　</p>
+<p>　　韩信也许是听见了，他加快抽插，龙根埋进最深的地方，把积攒都交给诸葛亮。</p>
+<p>　　</p>
+<p>　　抽身之后韩信把诸葛亮抱起，感受着他在自己怀里因为快感的余韵身子发颤。</p>
+<p>　　</p>
+<p>　　龙族的交配时间很长，韩信见诸葛亮快晕过去了，怕他受不住，只好收手。</p>
+<p>　　</p>
+<p>　　韩信抱起诸葛亮，沿着记忆中的水潭走去。诸葛亮累极，但情潮过去了，神智也清醒了。</p>
+<p>　　</p>
+<p>　　他并不后悔跟韩信媾和，相反，他倒是很愿意是韩信占有他。</p>
+<p>　　</p>
+<p>　　“醒了。”韩信抱着人走进水潭，帮他清理。</p>
+<p>　　</p>
+<p>　　诸葛亮轻轻地哼了声算是回应。</p>
+<p>　　</p>
+<p>　　估计是为了重塑仙体，韩信发现他射进去的东西怎么都清理不出来，见诸葛亮又要被弄哭了这才放弃。</p>
+<p>　　</p>
+<p>　　之后的一个月，两人在桃林中胡闹，最后躲进桃花源之中。</p>
+<p>　　</p>
+<p>　　一千八百余年只开花不结果的桃花树，终于在春去花谢的时候，孕育了一树的果实。</p>
+<p>　　</p>
+<p>　　在桃花林中的仙君也重塑仙体，脱去妖身，上封武陵，世称武陵仙君，司掌姻缘。</p>
+<p>　　</p>
+<p>　　白龙身为一方龙神，偶尔在东海现现身，接受一下供奉，回来又躲在桃林里粘着仙君。</p>
+<p>　　</p>
+<p>　　再后来仙君想要去看看大千世界，韩信便带着他踏遍山河万里，足迹遍布百河千川。</p>
+<p>　　</p>
+<p>　　两人长相厮守，成了仙界出了名的神仙眷侣，也成了一段传说。</p>
+<p>　　</p>
+<p>　　</p>
+
+  </div>
+  <div>
+  
+  <div class="post-note note-info copyright" style="margin-top: 42px">
+    <p><span style="font-weight: bold;">作者：</span><a target="_blank" rel="nofollow noopener noreferrer" href="http://example.com/about">丐帮公用碗</a></p>
+    <p><span style="font-weight: bold;">文章链接：</span><a target="_blank" rel="nofollow noopener noreferrer" href="http://example.com/2020/09/25/%E4%B8%80%E7%AF%87%E6%96%87/">http://example.com/2020/09/25/%E4%B8%80%E7%AF%87%E6%96%87/</a></p>
+    <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
+  </div>
+  
+  </div>
+</article>
+<div class="nav">
+  
+  
+  <div class="nav-item-next">
+    <a href="/2020/09/22/【信亮】街斗1/" class="nav-link">
+      <div>
+        <div class="nav-label">下一篇</div>
+        
+        <div class="nav-title">街斗 </div>
+        
+      </div>
+      <i class="iconfont icon-right nav-next-icon"></i>
+    </a>
+  </div>
+  
+</div>
+
+<div class="card card-content comment-card" style="margin-top: 16px;">
+  <div class="comment-card-title">评论</div>
+  
+    <div id="vcomments"></div>
+    
+    <script>
+      loadScript("//unpkg.com/valine/dist/Valine.min.js");
+      var oldLoadVa = window.onload;
+      window.onload = function () {
+        oldLoadVa && oldLoadVa();
+        new Valine({
+          el: '#vcomments',
+          appId: 'DS91I2baTNikfzPL6V4FuD2v-9Nh9j0Va',
+          appKey: 's6ab0bWuKWNQNz3xCpffSA5x',
+          placeholder: 'type here',
+          path: window.location.pathname,
+          avatar: 'mp',
+          meta: ["nick","mail","link"],
+          pageSize: '10',
+          lang: '',
+          visitor: 'false',
+          highlight: true,
+          recordIP: false,
+          
+          serverURLs: 'https://e1-api.leancloud.cn/',
+          
+          
+          
+          enableQQ: 'false',
+          requiredFields: [],
+        });
+      };
+    </script>
+  
+</div>
+
+<div class="card card-content toc-card" id="mobiletoc">
+  <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+
+</div></main>
+          <aside class="left-column">
+            
+            <div class="card card-author">
+              
+<img src="http://img4.a0bi.com/upload/ttq/20170810/1502334433079.jpg?imageView2/0/w/600/h/600" class="author-img">
+
+<p class="author-name">丐帮公用碗</p>
+<p class="author-description">去分类按作者找文</p>
+<div class="author-message">
+  <a class="author-posts-count" href="/archives">
+    <span>11</span>
+    <span>文章</span>
+  </a>
+  <a class="author-categories-count" href="/categories">
+    <span>3</span>
+    <span>分类</span>
+  </a>
+  <a class="author-tags-count" href="/tags">
+    <span>6</span>
+    <span>标签</span>
+  </a>
+</div>
+
+            </div>
+            
+            <div class="sticky-tablet">
+  
+  
+  <article class="display-when-two-columns spacer">
+    <div class="card card-content toc-card">
+      <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+
+    </div>
+  </article>
+  
+  
+  <article class="card card-content categories-widget">
+    <div class="categories-card">
+  <div class="categories-header"><i class="iconfont icon-fenlei" style="padding-right: 2px;"></i>分类</div>
+  <div class="categories-list">
+    
+      <a href="/categories/笑笑的文">
+        <div class="categories-list-item">
+          笑笑的文
+          <span class="categories-list-item-badge">5</span>
+        </div>
+      </a>
+    
+      <a href="/categories/我的文">
+        <div class="categories-list-item">
+          我的文
+          <span class="categories-list-item-badge">3</span>
+        </div>
+      </a>
+    
+      <a href="/categories/羲卯的文">
+        <div class="categories-list-item">
+          羲卯的文
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  <article class="card card-content tags-widget">
+    <div class="tags-card">
+  <div class="tags-header"><i class="iconfont icon-biaoqian" style="padding-right: 2px;"></i>热门标签</div>
+  <div class="tags-list">
+    
+    <a href="\tags\信亮" title="信亮"><div class="tags-list-item">信亮</div></a>
+    
+    <a href="\tags\成人向" title="成人向"><div class="tags-list-item">成人向</div></a>
+    
+    <a href="\tags\古风" title="古风"><div class="tags-list-item">古风</div></a>
+    
+    <a href="\tags\白龙吟x武陵仙君" title="白龙吟x武陵仙君"><div class="tags-list-item">白龙吟x武陵仙君</div></a>
+    
+    <a href="\tags\详细暴力描写" title="详细暴力描写"><div class="tags-list-item">详细暴力描写</div></a>
+    
+    <a href="\tags\无辜被p系列" title="无辜被p系列"><div class="tags-list-item">无辜被p系列</div></a>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+          </aside>
+          <aside class="right-column">
+            <div class="sticky-widescreen">
+  
+  
+  <article class="card card-content toc-card">
+    <div class="toc-header"><i class="iconfont icon-menu" style="padding-right: 2px;"></i>目录</div>
+
+  </article>
+  
+  
+  <article class="card card-content">
+    <div class="recent-posts-card">
+  <div class="recent-posts-header"><i class="iconfont icon-wenzhang_huaban" style="padding-right: 2px;"></i>最近文章</div>
+  <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-25</div>
+        <a href="/2020/09/25/一篇文/"><div class="recent-posts-item-content">相渡</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-22</div>
+        <a href="/2020/09/22/【信亮】街斗1/"><div class="recent-posts-item-content">街斗</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-21</div>
+        <a href="/2020/09/21/【信亮】无题/"><div class="recent-posts-item-content">某得名字by笑笑</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2020-09-21</div>
+        <a href="/2020/09/21/【信亮】今天信哥的智商不在线/"><div class="recent-posts-item-content">今天信哥的智商不在线by笑笑</div></a>
+      </div>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+  <div class="footer-container">
+    <div>
+      <div class="footer-dsc">
+        <span>Copyright ©
+          
+          2020 -
+          
+          2020
+        </span>
+        &nbsp;
+        <a href="/" class="footer-link">XXXXL信亮Garage </a>
+      </div>
+    </div>
+
+    
+    <div class="footer-dsc">
+      
+      Powered by
+      <a href="https://hexo.io/" class="footer-link" target="_blank" rel="nofollow noopener noreferrer">&nbsp;Hexo </a>
+      
+      
+      <span>&nbsp;|&nbsp;</span>
+      
+      
+      Theme -
+      <a href="https://github.com/theme-kaze" class="footer-link" target="_blank"
+        rel="nofollow noopener noreferrer">&nbsp;Kaze</a>
+      
+    </div>
+    
+    
+    
+    
+      <div class="footer-dsc">
+        
+        本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        
+        
+        <span>&nbsp;|&nbsp;</span>
+        
+        
+        本站总访客数<span id="busuanzi_value_site_uv"></span>次
+        
+      </div>
+      
+    
+</footer>
+  <a role="button" id="scrollbutton" class="basebutton" >
+  <i class="iconfont icon-arrowleft button-icon"></i>
+</a>
+<a role="button" id="menubutton" class="basebutton">
+  <i class="iconfont icon-menu button-icon"></i>
+</a>
+<a role="button" id="popbutton" class="basebutton">
+  <i class="iconfont icon-expand button-icon"></i>
+</a>
+<a role="button" id="darkbutton" class="basebutton darkwidget">
+  <i class="iconfont icon-weather button-icon"></i>
+</a>
+<a role="button" id="searchbutton" class="basebutton searchwidget">
+  <i class="iconfont icon-search button-icon"></i>
+</a>
+
+  
+  
+  
+  <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img');
+    var i;
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a');
+      wrapper.setAttribute('data-fslightbox', 'gallery');
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'));
+      wrapper.style.cssText = 'width: 100%; display: flex; justify-content: center;';
+      img[i].before(wrapper);
+      wrapper.append(img[i]);
+    }
+    refreshFsLightbox();
+  }
+</script>
+<script>loadScript("//cdn.jsdelivr.net/npm/fslightbox@3.1.0/index.min.js", addImgLayout)</script>
+  
+  
+  
+<script src="/js/main.js"></script>
+
+  
+  <script>loadScript("/js/lib/busuanzi.min.js")</script>
+  
+  
+  <script>
+    var addLazyload = function () {
+      var observer = lozad('.lozad', {
+        load: function (el) {
+          el.srcset = el.getAttribute('data-src');
+        },
+        loaded: function (el) {
+          el.classList.add('loaded');
+        }
+      });
+      observer.observe();
+    }
+  </script>
+  <script>loadScript("/js/lib/lozad.min.js", addLazyload)</script>
+  
+  
+</body>
+
+</html>
