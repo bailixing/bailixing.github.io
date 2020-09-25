@@ -367,31 +367,36 @@
 
 <div class="card card-content comment-card" style="margin-top: 16px;">
   <div class="comment-card-title">评论</div>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Valine - A simple comment system based on Leancloud.</title>
-<!--Leancloud ������:-->
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!--Valine �ĺ��Ĵ����:-->
-<script src="./dist/Valine.min.js"></script>
-</head>
-<body>
-<div class="comment"></div>
-<script>
-new Valine({
-av-min.js
-av: AV, 
-el: '.comment',
-app_id: 'yuvJSS4eGWjkWAxbixrSj4gb-MdYXbMMI',
-app_key: 'rQ26QDWnGA7rckIvC43UKXJQ',
-placeholder: 'type here' 
-});
-</script>
-</body>
-</html>
-
+  
+    <div id="vcomments"></div>
+    
+    <script>
+      loadScript("//unpkg.com/valine/dist/Valine.min.js");
+      var oldLoadVa = window.onload;
+      window.onload = function () {
+        oldLoadVa && oldLoadVa();
+        new Valine({
+          el: '#vcomments',
+          appId: 'yuvJSS4eGWjkWAxbixrSj4gb-MdYXbMMI',
+          appKey: 'rQ26QDWnGA7rckIvC43UKXJQ',
+          placeholder: 'type here',
+          path: window.location.pathname,
+          avatar: 'mp',
+          meta: ["nick","mail","link"],
+          pageSize: '10',
+          lang: '',
+          visitor: 'false',
+          highlight: true,
+          recordIP: false,
+          
+          
+          
+          enableQQ: 'false',
+          requiredFields: [],
+        });
+      };
+    </script>
+  
 </div>
 
 <div class="card card-content toc-card" id="mobiletoc">
