@@ -345,38 +345,37 @@
 <div class="card card-content comment-card" style="margin-top: 16px;">
   <div class="comment-card-title">评论</div>
   
-    <div id="vcomments"></div>
-    
-    <script>
-      loadScript("//unpkg.com/valine/dist/Valine.min.js");
-      var oldLoadVa = window.onload;
-      window.onload = function () {
-        oldLoadVa && oldLoadVa();
-        new Valine({
-          el: '#vcomments',
-          appId: 'DS91I2baTNikfzPL6V4FuD2v-9Nh9j0Va',
-          appKey: 's6ab0bWuKWNQNz3xCpffSA5x',
-          placeholder: '评论可敲蛋【狗头】',
-          path: 'window.location.pathname',
-          avatar: 'mp',
-          meta: ["nick","mail","link"],
-          pageSize: '10',
-          lang: '',
-          visitor: 'true',
-          common_count: 'true',
-          highlight: true,
-          recordIP: false,
-          
-          serverURLs: 'https://e1-api.leancloud.cn/',
-          
-          
-          
-          enableQQ: 'false',
-          requiredFields: [],
-        });
-      };
-    </script>
+  <div id="vcomments"></div>
   
+  <script>
+    loadScript("//unpkg.com/valine/dist/Valine.min.js");
+    var oldLoadVa = window.onload;
+    window.onload = function () {
+      oldLoadVa && oldLoadVa();
+      new Valine({
+        el: '#vcomments',
+        appId: 'DS91I2baTNikfzPL6V4FuD2v-9Nh9j0Va',
+        appKey: 's6ab0bWuKWNQNz3xCpffSA5x',
+        placeholder: '评论可敲蛋【狗头】',
+        path: window.location.pathname,
+        avatar: 'retro',
+        meta: ["nick","mail","link"],
+        pageSize: '10',
+        lang: '',
+        visitor: 'false',
+        highlight: true,
+        recordIP: false,
+        
+        serverURLs: 'https://e1-api.leancloud.cn/',
+        
+        
+        
+        enableQQ: 'true',
+        requiredFields: [],
+      });
+    };
+  </script>
+
 </div>
 
 <div class="card card-content toc-card" id="mobiletoc">
@@ -458,17 +457,17 @@
     
     <a href="\tags\成人向" title="成人向"><div class="tags-list-item">成人向</div></a>
     
-    <a href="\tags\街头霸王x黄金分割率" title="街头霸王x黄金分割率"><div class="tags-list-item">街头霸王x黄金分割率</div></a>
-    
-    <a href="\tags\街头霸王×黄金分割率" title="街头霸王×黄金分割率"><div class="tags-list-item">街头霸王×黄金分割率</div></a>
-    
-    <a href="\tags\无辜被p系列" title="无辜被p系列"><div class="tags-list-item">无辜被p系列</div></a>
-    
-    <a href="\tags\白龙吟x武陵仙君" title="白龙吟x武陵仙君"><div class="tags-list-item">白龙吟x武陵仙君</div></a>
+    <a href="\tags\详细暴力描写" title="详细暴力描写"><div class="tags-list-item">详细暴力描写</div></a>
     
     <a href="\tags\古风" title="古风"><div class="tags-list-item">古风</div></a>
     
-    <a href="\tags\详细暴力描写" title="详细暴力描写"><div class="tags-list-item">详细暴力描写</div></a>
+    <a href="\tags\白龙吟x武陵仙君" title="白龙吟x武陵仙君"><div class="tags-list-item">白龙吟x武陵仙君</div></a>
+    
+    <a href="\tags\无辜被p系列" title="无辜被p系列"><div class="tags-list-item">无辜被p系列</div></a>
+    
+    <a href="\tags\街头霸王×黄金分割率" title="街头霸王×黄金分割率"><div class="tags-list-item">街头霸王×黄金分割率</div></a>
+    
+    <a href="\tags\街头霸王x黄金分割率" title="街头霸王x黄金分割率"><div class="tags-list-item">街头霸王x黄金分割率</div></a>
     
   </div>
 </div>
