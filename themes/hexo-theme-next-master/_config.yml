@@ -768,8 +768,8 @@ chatra:
 # For more information: https://www.tidio.com
 # Dashboard: https://www.tidio.com/panel/dashboard
 tidio:
-  enable: false
-  key: # Public Key, get it from dashboard. See: https://www.tidio.com/panel/settings/developer
+  enable: true
+  key: njf68oandilrgtbfckjbicfigkkujwes # Public Key, get it from dashboard. See: https://www.tidio.com/panel/settings/developer
 
 # Gitter Support
 # For more information: https://gitter.im
