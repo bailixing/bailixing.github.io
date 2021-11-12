@@ -751,7 +751,7 @@ local_search:
 # A button to open designated chat widget in sidebar.
 # Firstly, you need to enable and configure the chat service.
 chat:
-  enable: false
+  enable: true
   icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
   text: Chat # Button text, change it as you wish.
 
@@ -768,14 +768,14 @@ chatra:
 # For more information: https://www.tidio.com
 # Dashboard: https://www.tidio.com/panel/dashboard
 tidio:
-  enable: true
+  enable: false
   key: njf68oandilrgtbfckjbicfigkkujwes # Public Key, get it from dashboard. See: https://www.tidio.com/panel/settings/developer
 
 # Gitter Support
 # For more information: https://gitter.im
 gitter:
-  enable: false
-  room:
+  enable: true
+  room: <Bailixing.github.io>/<water-treatment-room>
 
 
 # ---------------------------------------------------------------
