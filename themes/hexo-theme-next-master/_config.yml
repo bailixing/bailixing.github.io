@@ -882,3 +882,7 @@ vendors:
 css: css
 js: js
 images: images
+
+# extensions
+## Plugins: http://hexo.io/plugins/
+plugins: hexo-generator-feed
