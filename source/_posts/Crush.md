@@ -15,7 +15,7 @@ mathjax: true
 
 Heaven and earth have been separated from chaos for so long that heaven does not know earth, and earth does not know heaven.
 
--
+
 
 这是旧时光里第一个久远的盛夏，作为他们之后的生命中所有夏天的源头，有着发光鲜艳到失真的色调。
 正午日光耀烈，花园里高大的苹果树投下浓荫。光影如此泾渭分明地分割而笼罩于树荫下的他们亲密无间，手足相交缠如同彼此不可分割的躯体。
