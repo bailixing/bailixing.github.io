@@ -14,6 +14,7 @@ mathjax: true
 ---
 
 Heaven and earth have been separated from chaos for so long that heaven does not know earth, and earth does not know heaven.
+
 -
 
 这是旧时光里第一个久远的盛夏，作为他们之后的生命中所有夏天的源头，有着发光鲜艳到失真的色调。
